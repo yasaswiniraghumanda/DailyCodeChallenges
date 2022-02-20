@@ -1,0 +1,9 @@
+from itertools import combinations
+k=int(input())
+l=list(map(int,input().split()))
+r=combinations(l,2)
+for i in r:
+    if(sum(i)==k):
+        print("True")
+        exit(0)
+print("False")
